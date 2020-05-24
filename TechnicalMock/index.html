@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>RCEO TechVenture Intern Program</title>
+    <title>Technical Mock (RCFA)</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
@@ -16,7 +16,7 @@
       <div class="container">
         <div class="navbar-header">
           <div class="navbar-brand">
-            <a href="index.html"><h1>RCEO TechVenture Intern Program</h1></a>
+            <a href="../index.html"><h1>RCFA Student Hub</h1></a>
           </div>
 
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
@@ -30,16 +30,16 @@
         <div id="collapsable-nav" class="collapse navbar-collapse">
            <ul id="nav-list" class="nav navbar-nav navbar-right">
             <li>
-              <a href="menu-categories.html">Home</a>
+              <a href="../index.html">Home</a>
             </li>
             <li>
-              <a href="menu-categories.html">Schedule</a>
+              <a href="index.html">Technical Mock</a>
             </li>
             <li>
-              <a href="menu-categories.html">Materials</a>
+              <a href="menu-categories.html">Technical Material</a>
             </li>
             <li>
-              <a href="menu-categories.html">Assignements</a>
+              <a href="menu-categories.html">Networking Material</a>
             </li>
             <li>
               <a href="menu-categories.html">Other</a>
@@ -51,28 +51,52 @@
   </header>
 
   <div id="main-content" class="container">
-    <div class="jumbotron">
-      <img src="images/banner_home.jpg" class="img-responsive visible-xs">
-      <span>Welcome to RCEO's inaugural TechVenture Intern Program ...</span>
+    <h2>Instructions</h2>
+      <ul class="instructions">
+        <li>First choose which types of questions that you want to be interviewed on (you can chose the following topics: Accounting, Enterprise Value, DCF, M&A, and LBO)</li>
+        <li>Press the Randomize Question button to get a new question. If you want to see the previous or next question since its a continuation question you can do so by either clicking Previous Question or Next Question</li>
+        <li>By default, the answer to the question will not be shown. You must press Show Answer to toggle the answer</li>
+      </ul>    
+    
+    <h2>Dashboard</h2>
+
+    <div>
+      <div class="custom-control custom-switch" id="first">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+        <label class="custom-control-label" for="customSwitch1">Accounting</label>
+      </div>
+  
+      <div class="custom-control custom-switch" id="second">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+        <label class="custom-control-label" for="customSwitch1">Enterprise Value</label>
+      </div>
+  
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+        <label class="custom-control-label" for="customSwitch1">DCF</label>
+      </div>
+  
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+        <label class="custom-control-label" for="customSwitch1">M&A</label>
+      </div>
+  
+      <div class="custom-control custom-switch">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+        <label class="custom-control-label" for="customSwitch1">LBO</label>
+      </div>
+    </div>
+    
+
+    <div>
+      <button onclick="randomizeQuestion()">Randomize Question</button>
+      <button onclick="nextQuestion()">Next Question</button>
+      <button onclick="prevQuestion()">Previous Question</button>
+      <button onclick="showAnswer()">Show Answer</button>
     </div>
 
-    <div id="home-tiles" class="row">
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="menu-categories.html"><div id="menu-tile"><span>menu</span></div></a>
-      </div>
-      <div class="col-md-4 col-sm-6 col-xs-12">
-        <a href="single-category.html"><div id="specials-tile"><span>specials</span></div></a>
-      </div>
-      <div class="col-md-4 col-sm-12 col-xs-12">
-        <a href="https://www.google.com/maps/place/David+Chu's+China+Bistro/@39.3635874,-76.7138622,17z/data=!4m6!1m3!3m2!1s0x89c81a14e7817803:0xab20a0e99daa17ea!2sDavid+Chu's+China+Bistro!3m1!1s0x89c81a14e7817803:0xab20a0e99daa17ea" target="_blank">
-          <div id="map-tile">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3084.675372390488!2d-76.71386218529199!3d39.3635874269356!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c81a14e7817803%3A0xab20a0e99daa17ea!2sDavid+Chu&#39;s+China+Bistro!5e0!3m2!1sen!2sus!4v1452824864156" width="100%" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
-            <span>map</span>
-          </div>
-
-        </a>
-      </div>
-    </div>
+    
+    
 
   </div>
 

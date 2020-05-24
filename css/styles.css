@@ -57,20 +57,6 @@ body {
 
 /* HOME PAGE */
 
-h2 {
-  font-size: 2em;
-  color: #203864;
-}
-.instructions {
-  font-size: 1.2em;
-}
-button {
-  width: 24%;
-  background-color: #203864;
-  color: white;
-  border: black solid 2px;
-}
-
 
 
 
@@ -110,7 +96,19 @@ button {
     letter-spacing: .1em;
     text-transform: uppercase;
   }
-  /* End Header */  
+  /* End Header */
+
+  /* Home Page */
+  .container .jumbotron {
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  #menu-tile, #specials-tile {
+    width: 360px;
+    margin: 0 auto 15px;
+  }
+
 }
 
 
