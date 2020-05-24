@@ -88,13 +88,26 @@
     </div>
     
 
-    <div>
+    <div id="buttons">
       <button onclick="randomizeQuestion()">Randomize Question</button>
       <button onclick="nextQuestion()">Next Question</button>
       <button onclick="prevQuestion()">Previous Question</button>
       <button onclick="showAnswer()">Show Answer</button>
     </div>
 
+    <div id="question-number">Question Number : <span id="question-span">0</span></div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6 col-sm-6" id="question-box-header">Question</div>
+        <div class="col-md-6 col-sm-6" id="answer-box-header">Answer</div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6 col-sm-6" id="question-box" style="overflow-y:scroll;"></div>
+        <div class="col-md-6 col-sm-6" id="answer-box" style="overflow-y:scroll;"></div>
+      </div>
+    </div>
     
     
 

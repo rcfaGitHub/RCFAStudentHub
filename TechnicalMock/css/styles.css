@@ -65,12 +65,33 @@ h2 {
   font-size: 1.2em;
 }
 button {
-  width: 24%;
   background-color: #203864;
   color: white;
   border: black solid 2px;
+  width: 24%;
 }
 
+#question-box-header, #answer-box-header {
+  margin-top: 5px;
+  border: black solid 1px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #A7BCE3;
+}
+
+#question-box, #answer-box {
+  border: black solid 1px;
+  text-align: center;
+  background-color:white;
+  height: 400px;
+  margin-bottom: 50px;
+}
+
+#question-number {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-top: 20px;
+}
 
 
 
