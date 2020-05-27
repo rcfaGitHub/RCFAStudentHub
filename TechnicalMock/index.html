@@ -60,32 +60,30 @@
     
     <h2>Dashboard</h2>
 
-    <div>
-      <div class="custom-control custom-switch" id="first">
-        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+    <div class="custom-control custom-switch custom-control-inline" id="first">
+        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked onchange="accountingToggle()">
         <label class="custom-control-label" for="customSwitch1">Accounting</label>
       </div>
   
-      <div class="custom-control custom-switch" id="second">
-        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+      <div class="custom-control custom-switch custom-control-inline" id="second">
+        <input type="checkbox" class="custom-control-input" id="customSwitch2" checked onchange="evToggle()">
         <label class="custom-control-label" for="customSwitch1">Enterprise Value</label>
       </div>
   
-      <div class="custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+      <div class="custom-control custom-switch custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="customSwitch4" checked onchange="mandaToggle()">
+        <label class="custom-control-label" for="customSwitch1">M&A</label>
+      </div>
+      
+      <div class="custom-control custom-switch custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="customSwitch3" checked onchange="dcfToggle()">
         <label class="custom-control-label" for="customSwitch1">DCF</label>
       </div>
   
-      <div class="custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
-        <label class="custom-control-label" for="customSwitch1">M&A</label>
-      </div>
-  
-      <div class="custom-control custom-switch">
-        <input type="checkbox" class="custom-control-input" id="customSwitch1" checked>
+      <div class="custom-control custom-switch custom-control-inline">
+        <input type="checkbox" class="custom-control-input" id="customSwitch5">
         <label class="custom-control-label" for="customSwitch1">LBO</label>
       </div>
-    </div>
     
 
     <div id="buttons">
@@ -117,6 +115,7 @@
   <!-- jQuery (Bootstrap JS plugins depend on it) -->
   <script src="js/jquery-2.1.4.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script src="js/questions.js"></script> 
   <script src="js/script.js"></script>
 </body>
 </html>
